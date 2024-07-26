@@ -98,7 +98,7 @@ export const UserProfileForm = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/resumes/postresume",
+        "https://resume-assignment.onrender.com/api/resumes/postresume",
         {
           method: "POST",
           headers: {
@@ -120,7 +120,7 @@ export const UserProfileForm = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg space-y-6 flex flex-col">
-      {/* Title Section */}
+      {/* Title  */}
       <section className="border-b pb-4">
         <h2 className="text-xl font-semibold mb-2">Profile Summary</h2>
         <textarea
@@ -132,7 +132,7 @@ export const UserProfileForm = () => {
         />
       </section>
 
-      {/* Title Section */}
+      {/* Title */}
       <section className="border-b pb-4">
         <h2 className="text-xl font-semibold mb-2">Title</h2>
         <textarea
@@ -144,7 +144,7 @@ export const UserProfileForm = () => {
         />
       </section>
 
-      {/* Personal Information Section */}
+      {/* Personal */}
       <section className="border-b pb-4">
         <h2 className="text-xl font-semibold mb-2">Personal Information</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -183,7 +183,7 @@ export const UserProfileForm = () => {
         </div>
       </section>
 
-      {/* Work Experience Section */}
+      {/* Work*/}
       <section className="border-b pb-4">
         <h2 className="text-xl font-semibold mb-2">Work Experience</h2>
         {workExperience.map((exp, index) => (
@@ -258,7 +258,7 @@ export const UserProfileForm = () => {
         </div>
       </section>
 
-      {/* Education Section */}
+      {/* Education*/}
       <section className="border-b pb-4">
         <h2 className="text-xl font-semibold mb-2">Education</h2>
         {education.map((edu, index) => (
@@ -333,7 +333,7 @@ export const UserProfileForm = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Skills  */}
       <section className="border-b pb-4">
         <h2 className="text-xl font-semibold mb-2">Skills</h2>
         <div className="flex flex-wrap gap-2 mb-4">
@@ -362,7 +362,7 @@ export const UserProfileForm = () => {
         />
       </section>
 
-      {/* Submit Button */}
+      
       <div className="flex justify-end">
         <button
           onClick={handleSubmit}
