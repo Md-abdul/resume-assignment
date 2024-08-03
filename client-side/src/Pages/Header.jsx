@@ -7,6 +7,7 @@ const Header = () => {
       <h1 className="text-4xl font-bold">{personalInfo.name}</h1>
       <h2 className="text-lg font-semibold mt-5">{title}</h2>
 
+      {/* <hr className="h-px my-8 bg-gray-500 border-0 dark:bg-gray-900"></hr> */}
       <hr className="h-px my-8 bg-gray-500 border-0 dark:bg-gray-900"></hr>
     </div>
   );

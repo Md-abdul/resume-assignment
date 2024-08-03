@@ -6,6 +6,7 @@ import ExperienceSection from "./ExperienceSection";
 import Header from "./Header";
 import ProfileSection from "./ProfileSection";
 import SkillsSection from "./Skills";
+import FooterSection from "./FooterSectino";
 
 export const TemplateSelection = () => {
   const componentRef = useRef();
@@ -26,7 +27,7 @@ export const TemplateSelection = () => {
           <ProfileSection />
         </div>
       </div>
-      <div className="grid grid-cols-3" style={{ gap: "50%" }}>
+      <div className="grid grid-cols-3 -mt-4" style={{ gap: "50%" }}>
         <div className="col-span-1 ml-10">
           <EducationSection />
         </div>
@@ -35,30 +36,7 @@ export const TemplateSelection = () => {
         </div>
       </div>
 
-      {/* Resume Download Button */}
-      
-
-      {/* Resume Content */}
-      {/* <div ref={componentRef}>
-        <Header />
-        <ContactSection />
-        <div className="grid grid-cols-3" style={{ gap: '50%' }}>
-          <div className="col-span-1 ml-5">
-            <SkillsSection />
-          </div>
-          <div className="col-span-2">
-            <ProfileSection />
-          </div>
-        </div>
-        <div className="grid grid-cols-3" style={{ gap: '50%' }}>
-          <div className="col-span-1 ml-5">
-            <EducationSection />
-          </div>
-          <div className="col-span-2">
-            <ExperienceSection />
-          </div>
-        </div>
-      </div> */}
+      <FooterSection/>      
     </div>
     <ReactToPrint
         trigger={() => (
